@@ -1,50 +1,55 @@
 export const questions = [
   {
     id: 1,
-    text: "你收到了一封來自不明電子郵件的貨幣推薦，並且該推薦聲稱可以讓你賺取更多的錢。你會怎麼做？",
+    text: "你加入了一個NFT項目，有消息說創辦人突然失蹤了，你該怎麼做？",
     options: [
       {
         id: 1,
-        text: "點擊電子郵件中的連結以了解更多信息。",
+        text: "好像突然懂了什麼，自己也去當NFT項目創辦人",
         isCorrect: false,
         moneyLost: 200000,
       },
-      { id: 2, text: "刪除電子郵件。", isCorrect: true, moneyLost: 0 },
+      {
+        id: 2,
+        text: "聯絡專案的工程師，請他們幫忙",
+        isCorrect: true,
+        moneyLost: 10000,
+      },
     ],
   },
   {
     id: 2,
-    text: "你想要買入一個名為XYZ的新加密貨幣。當你搜索並找到相關的網站時，你發現它需要你提供你的私鑰。你會怎麼做？",
+    text: "聲譽很好的交易所，又是全世界第二大，把所有的身家都放在裡面，應該沒問題吧？",
     options: [
       {
         id: 3,
-        text: "提供私鑰，以便購買新貨幣。",
+        text: "沒問題的 💪",
         isCorrect: false,
         moneyLost: 500000,
       },
       {
         id: 4,
-        text: "不提供私鑰，尋找其他購買方式。",
+        text: "可能分散一下風險，放到Steaker",
         isCorrect: true,
-        moneyLost: 0,
+        moneyLost: 10000,
       },
     ],
   },
   {
     id: 3,
-    text: "你想在加密貨幣交易所買進或賣出一種貨幣，但你不知道最佳的買入或賣出價格。你會怎麼做？",
+    text: "你聽到最近有一個火紅的幣只有在某個交易所有上架販售，搜尋一下以後你的直覺告訴你怪怪的，你應該怎麼做：",
     options: [
       {
         id: 5,
-        text: "以當前市場價格下單。",
+        text: "你的直覺不準確，賺錢比較重要",
         isCorrect: false,
-        moneyLost: 300000,
+        moneyLost: 100000,
       },
       {
         id: 6,
-        text: "進行研究並查找適當的買入或賣出價格。",
+        text: "比對一下domain，覺得跟印象中不一樣，就不點進去了，但做了場外交易",
         isCorrect: true,
-        moneyLost: 0,
+        moneyLost: 10000000,
       },
     ],
   },
