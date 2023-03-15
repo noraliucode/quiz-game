@@ -45,14 +45,13 @@ const Game: React.FC = () => {
       (option) => option.id === selectedOptionId
     );
 
-    if (selectedOption?.isCorrect) {
-      setScore(score + 1);
+    const moneyLost = selectedOption?.moneyLost || 0;
+    setMoney((prevMoney) => prevMoney - moneyLost);
+
+    if (!selectedOption?.isCorrect || money - moneyLost <= 0) {
+      setGameOver(true);
     } else {
-      const moneyLost = selectedOption?.moneyLost || 0;
-      setMoney((prevMoney) => prevMoney - moneyLost);
-      if (money - moneyLost <= 0) {
-        setGameOver(true);
-      }
+      setScore(score + 1);
     }
 
     setSelectedOptionId(null);
